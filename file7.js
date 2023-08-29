@@ -97,6 +97,9 @@ app.put("/svr/students/:id",function(req,res){
         }
     })
 })
+app.get("/",(req,res)=>{
+    res.send("backend is working fine");
+    })
 app.delete("/svr/students/:id",function(req,res){
     let body=req.body;
     let id = +req.params.id;
